@@ -1,0 +1,120 @@
+.bet-type {
+  height: unset;
+  border-radius: 40px;
+  font-size: 14px;
+  background-color: #a1a1cc;
+  color: #595192;
+}
+
+.bet-type:hover {
+  background-color: var(--gab-secondary-color);
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.col-span-12 {
+  grid-column: span 12 / span 12;
+}
+
+.col-span-8 {
+  grid-column: span 12 / span 12;
+}
+
+.col-span-4 {
+  grid-column: span 12 / span 12;
+}
+
+.text-base {
+  font-size: 16px;
+}
+
+.lottery-info__header {
+  background: #e6e6e6;
+}
+
+.bet-type-image-wrapper {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+}
+
+.bet-type-image-wrapper__image {
+  height: 80%;
+}
+
+.lotto-time-capsule__section-two {
+  border-top: 1px solid #ccc;
+}
+
+.lotto-sections__header {
+  background: #e6e6e6;
+}
+
+.game-selector {
+  border-radius: 40px;
+  width: 120px;
+  height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .lotto-ball:hover {
+    background-color: var(--gab-secondary-color);
+  }
+
+  .bet-type-image-wrapper {
+    height: 120px;
+    width: 180px;
+    border-radius: 60px;
+    margin-left: 100px;
+  }
+
+  .bet-type-image-wrapper__image {
+    height: 100%;
+  }
+
+  .lottery-info__header {
+    height: 150px;
+  }
+
+  .lotto-time-capsule {
+    height: 120px;
+    border-radius: 60px;
+    margin-left: 20px;
+  }
+
+  .lotto-time-capsule__section-two {
+    border-top: unset;
+    border-left: 1px solid #ccc;
+    height: 100%;
+  }
+
+  .lotto-sections__header {
+    height: 130px;
+  }
+
+  .col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
+  .col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .md:text-base {
+    font-size: 16px;
+  }
+
+  .w-md-50 {
+    width: 50%;
+  }
+
+  .game-selector {
+    width: 150px;
+  }
+}

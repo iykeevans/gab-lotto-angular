@@ -1,0 +1,82 @@
+.bet-type {
+  height: unset;
+  border-radius: 40px;
+  font-size: 14px;
+  background-color: #ededff;
+  color: #595192;
+}
+
+.bet-type:hover {
+  background-color: var(--gab-secondary-color);
+  font-weight: bold;
+}
+
+.bet-sub-type {
+  border-bottom: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  background-color: transparent;
+  border-radius: 0;
+  height: unset;
+  font-size: 14px;
+}
+
+.is-active {
+  background-color: var(--gab-secondary-color);
+  font-weight: bold;
+}
+
+.is-active--underline {
+  border-bottom: 2px solid var(--gab-secondary-color);
+  font-weight: bold;
+}
+
+.is-active--ball {
+  background-image: -o-linear-gradient(4deg,
+      #ec038b 0%,
+      #fb6468 44%,
+      #fbb936 100%) !important;
+  background-image: linear-gradient(86deg,
+      #ec038b 0%,
+      #fb6468 44%,
+      #fbb936 100%) !important;
+  -webkit-box-shadow: 0px 7px 7px 0px rgba(243, 42, 126, 0.23) !important;
+  box-shadow: 0px 7px 7px 0px rgba(243, 42, 126, 0.23) !important;
+  color: #fff !important;
+}
+
+.single-lottery__games {
+  height: 100px;
+  min-width: 150px;
+  border-radius: 12px;
+  background: #ededff;
+}
+
+.single-lottery__games:hover {
+  background: var(--gab-secondary-color);
+}
+
+.single-lottery__games--active {
+  background: var(--gab-secondary-color);
+}
+
+.single-lottery__ball-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+/* .previous-numbers__machine-balls {
+        background: --var();
+      } */
+
+@media screen and (min-width: 768px) {
+  .single-lottery__ball-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+  }
+}

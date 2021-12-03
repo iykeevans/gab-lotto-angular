@@ -1,0 +1,80 @@
+.result-table-head {
+  color: #595192;
+}
+
+.result-table-head__row {
+  background: #f7fbff;
+  font-size: 14px;
+  box-shadow: 0px 11px 19.2px 0.8px rgba(66, 58, 232, 0.1);
+  border: 1px solid #eee;
+}
+
+.result-table-body__row {
+  border-top: 1px solid #eee;
+  font-size: 16px;
+}
+
+.custom-input {
+  border: 1px solid #eae9f9;
+  background: #f7fbff;
+  border-radius: 10px;
+  padding: 0px 15px;
+  font-size: 15px;
+  height: 40px;
+  color: #001485;
+  font-weight: 600;
+  min-width: 38px;
+}
+
+.custom-button--alt {
+  background-image: linear-gradient(0deg, #f4ba2e 0%, #fea036 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .table-col--wrapped {
+    width: 200px;
+  }
+
+  .custom-input {
+    width: 48px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .table,
+  .table tr,
+  .table tbody,
+  .table td {
+    display: block;
+  }
+
+  .table__title {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+  }
+
+  .table tr {
+    margin-bottom: 2em;
+    border: none;
+  }
+
+  .table td {
+    position: relative;
+    white-space: normal;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+  }
+
+  .table td:before {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 40%;
+    padding-left: 0.5em;
+    white-space: nowrap;
+    text-align: left;
+    content: attr(tableHeadData);
+  }
+}

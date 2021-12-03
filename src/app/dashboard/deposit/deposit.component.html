@@ -1,0 +1,419 @@
+<body>
+    <!-- ==========Preloader========== -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ==========Preloader========== -->
+
+    <!-- ==========Overlay========== -->
+    <div class="overlay"></div>
+    <a href="#" class="scrollToTop">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- ==========Overlay========== -->
+    <div class="collapse" id="navbar1">
+        <div class="bg-dark p-2">
+            <div class="container">
+                <button class="navbar-toggler close close-top-drawer" type="button" data-toggle="collapse"
+                    data-target="#navbar1" aria-label="Close">
+                    <small>Close&nbsp;</small><span aria-hidden="true">×</span>
+                </button>
+                <h4>Latest Winning Numbers</h4>
+                <div id="outer">
+                    <div class="div"></div>
+                    <div class="div"></div>
+                    <div class="div big"></div>
+                    <div class="div"></div>
+                    <div class="div"></div>
+                    <div class="div"></div>
+                    <div class="div"></div>
+                    <div class="div"></div>
+                    <div class="div"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========Header-Section========== -->
+    <header class="top-header">
+        <div class="header-section">
+            <nav id="nav-secondary" style="max-width: 1388px; margin: 0 auto">
+                <div class="nav-left">
+                    <div class="nav-item yellow with-border">
+                        <a role="button" class="navbar-collapse-toggle collapsed" data-toggle="collapse"
+                            class="navbar-toggler" data-target="#nav-collapse-menu" style="float: left"
+                            aria-expanded="false" aria-controls="navbar-collapse-winningnumbers"
+                            id="navbar-collapse-winningnumbers-link">
+                            <span class="hidden-sm hidden-md hidden-lg spacebreak">Results</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-item sapphire with-border">
+                        <a href="#" data-toggle="modal" data-target="#ticketModal"><img
+                                src="../assets/images/enter%20tickets6e47.png?h=11&amp;w=14&amp;la=en&amp;hash=87213C90AC2FDE1C6B6A3C2587A0DF557778DA4A"
+                                class="hidden-xs hidden-sm" alt="enter tickets icon image" />
+                            <span class="spacebreak">Enter Tickets</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-right b-blue"></div>
+
+                <div class="nav-item">
+                    <span class="wp-item" style="color: yellow; font-weight: bolder">&#8358; 800.00 <i
+                            class="glyphicon glyphicon-refresh"></i></span>
+                    &nbsp;&nbsp;|
+                </div>
+
+                <div class="nav-item hidden-xs">
+                    <a href="./deposit.html" class="wp-item">Deposit</a>&nbsp;&nbsp;|
+                </div>
+
+                <div class="nav-item hidden-xs">
+                    <a href="./bets.html" class="wp-item">My Bets</a>&nbsp;&nbsp;|
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn wp-item">
+                        Account
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./bets.html">My Bets</a>
+                        <a href="./deposit.html">Deposit</a>
+                        <a href="./withdrawals.html">Withdrawal</a>
+                        <a href="./winnings.html">Winnings</a>
+
+                        <a href="./index.html">My Account info.</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <nav class="main-nav d-flex align-items-center justify-content-start">
+            <button class="d-md-none d-flex align-items-center"
+                style="border: 1px solid; border-radius: 0px; height: 30px" onclick="toggleMobileNavigation()">
+                <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path fill="#000" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                </svg>
+            </button>
+
+            <a href="/index.html" class="main-nav__logo">
+                <img src="../assets/images/GAB-Lotto_Logo.png" alt="Gab Lotto Logo" class="h-100" />
+            </a>
+
+            <div class="main-nav__links text-uppercase d-none d-md-flex" style="font-size: 16px">
+                <a href="/single-lottery1.html" class="main-nav__link text-gab-primary-color mr-5 font-weight-bold">play
+                    now</a>
+                <a href="#" class="main-nav__link text-gab-primary-color font-weight-bold mr-5">games</a>
+                <a href="/result.html" class="main-nav__link text-gab-primary-color font-weight-bold mr-5">results</a>
+                <a href="/about.html" class="main-nav__link text-gab-primary-color font-weight-bold mr-5">about us</a>
+                <a href="#" class="main-nav__link text-gab-primary-color font-weight-bold mr-5">media</a>
+                <a href="/contact.html" class="main-nav__link text-gab-primary-color font-weight-bold">contact</a>
+            </div>
+        </nav>
+
+        <!-- mobile navigation -->
+        <div class="d-none" id="mobile-navigation" style="
+          background: #ccc;
+          height: 100vh;
+          width: 100vw;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 100;
+        ">
+            <div class="d-flex flex-column px-4 pt-3" style="width: 70%; background: white; height: 100%">
+                <button class="
+              align-self-end
+              d-flex
+              justify-content-center
+              align-items-center
+              mb-4
+            " style="height: 30px; width: 30px; border-radius: 0" onclick="toggleMobileNavigation()">
+                    <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                    </svg>
+                </button>
+
+                <a href="single-lottery1.html" class="mb-3 font-weight-medium">play now</a>
+                <a href="#" class="mb-3">games</a>
+                <a href="result.html" class="mb-3">results</a>
+                <a href="about.html" class="mb-3">about us</a>
+                <a href="#" class="mb-3">media</a>
+                <a href="contact.html">contact</a>
+            </div>
+        </div>
+    </header>
+    <!-- ==========Header-Section End========== -->
+
+    <!-- ==========Breadcrumb-Section========== -->
+    <section class="breadcrumb-area">
+        <div class="container">
+            <div class="content">
+                <h2 class="title">My Deposits</h2>
+                <ul class="breadcrumb-list extra-padding">
+                    <li>
+                        <a href="/index.html"> Home </a>
+                    </li>
+
+                    <li>
+                        <a href="/dashboard/">Dashboard</a>
+                    </li>
+
+                    <li>
+                        <a href="/dashboard/deposit.html">Deposit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- ==========Breadcrumb-Section========== -->
+
+    <!-- ==========Contact-Section========== -->
+    <section class="contact">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-11">
+                    <div class="contact-box d-flex flex-column">
+                        <div class="row">
+                            <div class="side-nav-seperator col-md-3 mb-md-0 mb-5">
+                                <div class="d-flex flex-column align-items-md-center">
+                                    <div class="avatar-circle mb-5"></div>
+
+                                    <ul>
+                                        <li class="mb-2">
+                                            <a href="./bets.html" class="side-nav-links">Bet History</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="./deposit.html" class="font-weight-bold">Deposit</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="./withdrawals.html" class="side-nav-links">Withdraw</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="./winnings.html" class="side-nav-links">Winnings</a>
+                                        </li>
+                                        <li>
+                                            <a href="./index.html" class="side-nav-links">My Account Info</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-9 pl-md-5">
+                                <form>
+                                    <span id="card-header">Saved cards:</span>
+
+                                    <div class="row row-1 pl-3">
+                                        <div class="col-2">
+                                            <input type="radio" data-toggle="collapse" checked name="collapseGroup"
+                                                class="mr-3" />
+                                            <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" />
+                                        </div>
+
+                                        <div class="col-7 pl-5">
+                                            <div>**** **** **** 3193</div>
+                                        </div>
+
+                                        <div class="col-3 d-flex justify-content-center">
+                                            <a href="#">Remove card</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-1 pl-3">
+                                        <div class="col-2">
+                                            <input type="radio" data-toggle="collapse" name="collapseGroup"
+                                                class="mr-3" />
+                                            <img class="img-fluid"
+                                                src="https://img.icons8.com/color/48/000000/visa.png" />
+                                        </div>
+
+                                        <div class="col-7 pl-5">
+                                            <div>**** **** **** 4296</div>
+                                        </div>
+
+                                        <div class="col-3 d-flex justify-content-center">
+                                            <a href="#">Remove card</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-1 pl-3 align-items-center">
+                                        <div class="col-2 d-flex">
+                                            <input name="collapseGroup" type="radio" data-toggle="collapse"
+                                                data-target="#collapseOne"
+                                                style="justify-self: flex-start; margin: unset" class="mr-3" />
+
+                                            <img class="img-fluid" src="https://img.icons8.com/color/48/000000/visa.png"
+                                                style="visibility: hidden" />
+                                        </div>
+
+                                        <div class="col-10 pl-5">Pay with New Card:</div>
+                                    </div>
+
+                                    <div class="panel-group" id="accordion">
+                                        <div id="collapseOne" class="panel-collapse collapse">
+                                            <div class="input-wrapper p-2 d-flex flex-column">
+                                                <label for="" class="text-xs mb-0">Card Holder Name</label>
+                                                <input type="text" placeholder="Kunle Oj..." style="height: 40px" />
+                                            </div>
+
+                                            <div class="row mt-2">
+                                                <div class="col-md-7 p-0">
+                                                    <div class="
+                                input-wrapper
+                                p-2
+                                d-flex
+                                flex-column
+                                align-items-start
+                              ">
+                                                        <label for="" class="text-xs mb-0">Card number</label>
+                                                        <input type="text" placeholder="5134-5264-4"
+                                                            style="height: 40px" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="
+                                input-wrapper
+                                p-2
+                                d-flex
+                                flex-column
+                                align-items-start
+                              ">
+                                                        <label for="" class="text-xs mb-0">Exp. date</label>
+                                                        <input type="text" placeholder="07/23"
+                                                            style="height: 40px; width: 100%" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="
+                                input-wrapper
+                                p-2
+                                d-flex
+                                flex-column
+                                align-items-start
+                              ">
+                                                        <label for="" class="text-xs mb-0">CVV</label>
+                                                        <input type="text" placeholder="07/23"
+                                                            style="height: 40px; width: 100%" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="
+                          col-7
+                          d-flex
+                          flex-column
+                          align-items-start
+                          mt-5
+                          mb-3
+                        ">
+                                            <label style="font-size: 16px">Amount(&#8358;)</label>
+                                            <input type="text" placeholder="Min. 500" style="height: 40px" />
+                                        </div>
+
+                                        <button class="btn" style="height: unset; width: 240px">
+                                            <b>Top Up Now</b>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========Contact-Section========== -->
+
+    <!-- ==========Newslater-Section========== -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-links">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-top-area">
+                            <div class="left">
+                                <a href="#">
+                                    <img src="../assets/images/app_store_btn.png" alt="" />
+                                </a>
+                                <a href="#">
+                                    <img src="../assets/images/goole_play_btn.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="right">
+                                <ul class="links">
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms of Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr class="hr2" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <div class="copyr-text">
+                            <span> Copyright © 2021.All Rights Reserved By </span>
+                            <a href="#">Gab Lotto</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-self-center">
+                        <ul class="footer-social-links">
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ==========Newslater-Section========== -->
+    <!-- All js link starts hear -->
+</body>

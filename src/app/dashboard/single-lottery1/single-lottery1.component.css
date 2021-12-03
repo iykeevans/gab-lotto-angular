@@ -1,0 +1,21 @@
+ .draw-section__ball {
+   background-color: #eee;
+   height: 46px;
+   width: 46px;
+ }
+
+ .isActive {
+   background-image: -o-linear-gradient(4deg,
+       #ec038b 0%,
+       #fb6468 44%,
+       #fbb936 100%);
+   background-image: linear-gradient(86deg,
+       #ec038b 0%,
+       #fb6468 44%,
+       #fbb936 100%);
+ }
+
+ .bet-type {
+   color: #595192;
+   background-color: #ededff;
+ }
